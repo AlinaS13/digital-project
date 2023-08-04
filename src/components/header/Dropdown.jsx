@@ -1,12 +1,8 @@
 import style from "./Dropdown.module.scss";
 
-import { useState } from "react";
-
 import { useEffect } from "react";
 
 const Dropdown = ({ isDropdownActive, setIsDropdownActive }) => {
-  const [isLogOutModalOpen, setIsLogOutModalOpen] = useState(false);
-
   const KEY_NAME_ESC = "Escape";
   const KEY_EVENT_TYPE = "keyup";
 

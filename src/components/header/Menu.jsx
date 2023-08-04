@@ -1,4 +1,3 @@
-// import { NavLink } from "react-router-dom";
 import CrossSVG from "../../assets/svg/header/Cross";
 import style from "./Menu.module.scss";
 

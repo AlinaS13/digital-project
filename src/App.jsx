@@ -1,4 +1,3 @@
-import "./App.scss";
 import { About } from "./components/about/About";
 import { ContactUs } from "./components/contactUs/ContactUs";
 import { Copyright } from "./components/copyright/Copyright";

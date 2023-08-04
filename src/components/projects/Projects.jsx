@@ -13,7 +13,7 @@ export const Projects = () => {
       <h2>Наши проекты</h2>
       <ul className={style.projectsImgWrp}>
         <li className={style.projectsElement}>
-          <a href="#">
+          <a href="">
             <img
               src={buildingOne}
               alt="buildingOne"
@@ -29,7 +29,7 @@ export const Projects = () => {
           </a>
         </li>
         <li className={style.projectsElement}>
-          <a href="#">
+          <a href="">
             <img
               src={buildingTwo}
               alt="buildingTwo"
@@ -45,7 +45,7 @@ export const Projects = () => {
           </a>
         </li>
         <li className={style.projectsElement}>
-          <a href="#">
+          <a href="">
             <img
               src={buildingThree}
               alt=" buildingThree"
@@ -61,7 +61,7 @@ export const Projects = () => {
           </a>
         </li>
         <li className={style.projectsElement}>
-          <a href="#">
+          <a href="">
             <img
               src={buildingFour}
               alt="buildingFour"
@@ -77,7 +77,7 @@ export const Projects = () => {
           </a>
         </li>
         <li className={style.projectsElement}>
-          <a href="#">
+          <a href="">
             <img
               src={buildingFive}
               alt="buildingFive"
@@ -94,7 +94,6 @@ export const Projects = () => {
         </li>
       </ul>
       <div className={style.projectsBtnWrp}>
-        {" "}
         <MainButton name="ВСЕ ПРОЕКТЫ" />
       </div>
     </section>

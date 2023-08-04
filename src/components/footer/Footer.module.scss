@@ -13,12 +13,12 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  //   flex-direction: column;
+
   @media screen and (min-width: $breakpoint-tablet) {
     align-items: start;
     padding-top: 58px;
     padding-bottom: 60px;
-    // flex-direction: row;
+
     justify-content: center;
     gap: 0;
     flex-wrap: nowrap;
@@ -88,8 +88,6 @@
   }
 }
 .socialBox {
-  // display: none;
-
   @media screen and (min-width: $breakpoint-tablet) {
     display: flex;
     flex-direction: column;
@@ -207,7 +205,6 @@
   }
 }
 .footerAddressItem {
-  //   width: 257px;
   margin-bottom: 20px;
   @media screen and (min-width: $breakpoint-tablet) {
     margin-bottom: 87px;

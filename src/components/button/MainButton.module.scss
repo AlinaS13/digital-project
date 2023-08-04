@@ -1,7 +1,7 @@
 @import "../../scss/mixins";
 @import "../../scss/variables";
 .mainButton {
-  width: 100px;
+  width: 110px;
   height: 40px;
   background-color: $mainBgColor;
   border: $mainBgColor;
@@ -32,6 +32,5 @@
   padding: 0 14px;
   @media screen and (min-width: $breakpoint-desktop) {
     gap: 12px;
-    // padding: 35px 55px;
   }
 }

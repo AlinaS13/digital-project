@@ -57,6 +57,14 @@
       padding-right: 0px;
     }
   }
+  button {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      margin-left: 0px;
+      margin-bottom: 0px;
+    }
+  }
 }
 .aboutImgWrp {
   position: relative;
@@ -72,8 +80,6 @@
       position: absolute;
       top: 93%;
       left: 25%;
-      // width: 216px;
-      // height: 109px;
     }
     @media screen and (min-width: $breakpoint-tablet) {
       &:first-of-type {

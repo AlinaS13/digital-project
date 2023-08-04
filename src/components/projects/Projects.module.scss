@@ -95,9 +95,8 @@
   }
 }
 .projectsFirstImg {
-  //   min-width: 100%;
   min-width: 280px;
-  //   height: 150px;
+
   @media screen and (min-width: $breakpoint-tablet) {
     min-width: 267px;
     height: 292px;
@@ -112,9 +111,8 @@
   }
 }
 .projectsSecondImg {
-  //   min-width: 100%;
   min-width: 280px;
-  //   height: 150px;
+
   @media screen and (min-width: $breakpoint-tablet) {
     min-width: 262px;
     height: 147px;
@@ -128,11 +126,9 @@
   }
 }
 .projectsThirdImg {
-  //   min-width: 100%;
   min-width: 288px;
-  //   height: 150px;
+
   @media screen and (min-width: $breakpoint-tablet) {
-    // width: 70px;
     height: 148px;
   }
   @media screen and (min-width: $breakpoint-desktop-small) {
@@ -144,7 +140,6 @@
   }
 }
 .projectsFourImg {
-  //   min-width: 100%;
   min-width: 288px;
   height: 150px;
   @media screen and (min-width: $breakpoint-tablet) {
@@ -170,7 +165,6 @@
 }
 .projectsTextBtn {
   padding-left: 50px;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,5 +184,6 @@
   }
   @media screen and (min-width: $breakpoint-desktop) {
     margin-left: 31px;
+    padding-left: 49px;
   }
 }

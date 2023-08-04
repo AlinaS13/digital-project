@@ -6,7 +6,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 15px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 30px;
+  }
 }
 
 .logo {

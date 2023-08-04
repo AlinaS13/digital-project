@@ -13,8 +13,7 @@ export const About = () => {
           <img src={secondImg} alt="firstImg" />
         </div>
         <img src={thirdImg} alt="firstImg" className={style.aboutCenterImg} />
-        <div className={style.aboutTextWrp}>
-          {" "}
+        <div>
           <h2>О компании</h2>
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting

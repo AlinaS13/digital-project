@@ -18,7 +18,7 @@ export const Header = () => {
 
   return (
     <header className={style.headerContainer}>
-      <a href="/digital-project">
+      <a href="/digital-project/">
         <img className={style.logo} src={logo} />
         <img className={style.logoText} src={logoText} />
       </a>

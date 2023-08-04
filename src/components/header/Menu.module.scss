@@ -13,8 +13,8 @@
 .crossWrapper {
   display: flex;
   justify-content: flex-end;
-  padding-top: 12px;
-  padding-right: 16px;
+  padding-top: 25px;
+  padding-right: 25px;
 }
 .backdrop {
   z-index: 1;
@@ -37,86 +37,32 @@
     height: 343px;
     content: "";
   }
-
-  // @include desktop {
-  //   position: static;
-  //   background-color: transparent;
-  //   width: auto;
-  //   height: auto;
-  //   padding: 0;
-  //   flex-direction: row;
-  //   transform: translateX(0);
-  //   margin-left: 187px;
-
-  //   &::after {
-  //     display: none;
-  //   }
-  // }
 }
 
 .backdrop.active {
   transform: translateX(0);
 }
 
-// .logoCrossWrapper {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-// }
-
-// .logo {
-//   @include tablet {
-//     height: 44px;
-//     width: 44px;
-//   }
-//   @include desktop {
-//     display: none;
-//   }
-// }
-
 .navList {
   margin-top: 124px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  // @include desktop {
-  //   z-index: 3;
-  //   margin-top: 0px;
-  //   flex-direction: row;
-  //   align-items: center;
-  // }
 }
 
 .navItem {
-  margin-bottom: 8px;
+  margin-bottom: 12px;
   &:last-child {
     margin-bottom: 0;
     margin-right: auto;
     margin-left: auto;
   }
-  // @include desktop {
-  //   margin-bottom: 0px;
-  //   margin-right: 30px;
-  //   &:last-child {
-  //     margin-left: 0;
-  //     margin-right: 0;
-  //   }
-  // }
 }
 
 .navLink {
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 1.47;
+  @include font-size(16, 16, 400);
   letter-spacing: -0.02em;
   color: $mainTextColor;
-  // @include tablet {
-  //   font-size: 24px;
-  // }
-  // @include desktop {
-  //   font-size: 14px;
-  //   line-height: 1.6;
-  // }
 }
 
 .active {
