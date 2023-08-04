@@ -1,0 +1,66 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.headerContainer {
+  @include container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: 33px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 70px;
+    height: 43px;
+  }
+}
+.logoText {
+  width: 60px;
+  height: 10px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    width: 68px;
+    height: 12px;
+  }
+}
+.burgerMenuBtn {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: none;
+  }
+}
+
+.headerNavigation {
+  display: none;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    gap: 14px;
+  }
+  span {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  a {
+    @include font-size(12, 12, 400);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: $mainTextColor;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    &:hover {
+      color: $accentColor;
+      transition: $hoverAnimation;
+      border-top: 1px solid $mainTextColor;
+      border-bottom: 1px solid $mainTextColor;
+    }
+  }
+}
+
+.active {
+  border-top: 1px solid $mainTextColor;
+  border-bottom: 1px solid $mainTextColor;
+}

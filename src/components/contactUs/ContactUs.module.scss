@@ -1,0 +1,225 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.contactUsContainer {
+  @include container;
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 132px;
+  }
+
+  h2 {
+    color: $secondaryTextColor;
+    @include font-size(34, 34, 300);
+    margin-bottom: 15px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font-size(64, 64, 300);
+      margin-bottom: 22px;
+    }
+  }
+  button {
+    border: $mainTextColor;
+    background-color: $mainTextColor;
+    color: $mainBgColor;
+    &:hover,
+    &:focus {
+      color: $mainTextColor;
+      background-color: $mainBgColor;
+      transition: $hoverAnimation;
+    }
+  }
+}
+.contactUsContentWrp {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 15px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    flex-direction: row;
+  }
+  gap: 30px;
+  img {
+    width: 100%;
+    @media screen and (min-width: $breakpoint-desktop) {
+      height: 344px;
+    }
+  }
+}
+
+.contactUsForm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 289px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    min-width: 391px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 30px;
+  }
+  textarea {
+    display: block;
+    box-sizing: border-box;
+    font-family: inherit;
+    width: 100%;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    background-color: #f3f3f3;
+    border: 1px solid transparent;
+    margin-bottom: 10px;
+    padding-left: 21px;
+    padding-top: 14px;
+    resize: none;
+    height: 126px;
+    &:hover,
+    &:focus {
+      border: 1px solid $accentColor;
+      outline: none;
+    }
+  }
+}
+.contactUsFofmInput {
+  display: block;
+  box-sizing: border-box;
+  font-family: inherit;
+  color: $mainTextColor;
+  font-size: 18px;
+  width: 100%;
+  height: 42px;
+  background-color: #f3f3f3;
+  border: 1px solid transparent;
+  margin-bottom: 10px;
+  padding-left: 21px;
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $accentColor;
+    &:focus {
+      &::placeholder {
+        color: transparent;
+      }
+    }
+  }
+  &::placeholder {
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+  }
+}
+.checkboxContainer {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 21px;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.contactUsFieldset {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  input {
+    display: block;
+    box-sizing: border-box;
+    height: 48px;
+    width: 100%;
+    padding-left: 21px;
+    border: 1px solid transparent;
+    background: #f3f3f3;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.56px;
+    outline: none;
+    &:focus {
+      border-color: $accentColor;
+    }
+    &:disabled {
+      border-color: #e6e6e6;
+      background: #f9fafb;
+    }
+    &::placeholder {
+      color: transparent;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.56px;
+    }
+  }
+  //   label {
+  //     position: absolute;
+  //     top: 12px;
+  //     left: 21px;
+  //     display: block;
+  //     font-size: 14px;
+  //     font-weight: 400;
+  //     letter-spacing: 0.56px;
+  //     color: #8d8d8d;
+  //     user-select: none;
+  //     cursor: text;
+  //     &::after {
+  //       position: relative;
+  //       top: -3px;
+  //       left: 1px;
+  //       display: inline-block;
+  //       content: "*";
+  //       color: #d0011b;
+  //     }
+  //   }
+
+  //   input.focused + label {
+  //     display: none;
+  //   }
+}
+
+.contactUsFofmLabel {
+  position: absolute;
+  bottom: 45%;
+  left: 6%;
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  color: #8d8d8d;
+  user-select: none;
+  cursor: text;
+  @media screen and (min-width: $breakpoint-tablet) {
+    left: 3%;
+    bottom: 44%;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    bottom: 47%;
+  }
+  &::after {
+    position: relative;
+    top: -3px;
+    left: 1px;
+    display: inline-block;
+    content: "*";
+    color: #d0011b;
+  }
+
+  input.focused + label {
+    display: none;
+  }
+}
+
+.confirmText {
+  color: $mainTextColor;
+  font-weight: 400;
+  @include font-size(12, 12, 400);
+  letter-spacing: 0.42px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include font-size(14, 14, 400);
+  }
+}

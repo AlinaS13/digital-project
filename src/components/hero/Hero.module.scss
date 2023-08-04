@@ -1,0 +1,135 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.heroContainer {
+  @include container;
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 120px;
+  }
+}
+.heroContentFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 123px;
+    justify-content: space-between;
+  }
+  img {
+    width: 100%;
+    // height: 246px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      // min-width: 470px;
+      max-height: 829px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      min-width: 770px;
+      max-height: 829px;
+    }
+  }
+}
+.heroTitle {
+  @include font-size(20, 20, 300);
+  color: $secondaryTextColor;
+  margin-bottom: 20px;
+  span {
+    @include font-size(30, 30, 700);
+    color: $mainTextColor;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include font-size(45, 45, 300);
+    margin-bottom: 60px;
+    span {
+      @include font-size(45, 45, 700);
+      color: $mainTextColor;
+    }
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    @include font-size(64, 64, 300);
+    color: $secondaryTextColor;
+    margin-bottom: 90px;
+    span {
+      @include font-size(64, 64, 700);
+      color: $mainTextColor;
+    }
+  }
+}
+
+.heroImgWrp {
+  position: relative;
+  button {
+    position: absolute;
+    background-color: $mainBgColor;
+    border: $mainBgColor;
+    bottom: 0%;
+    :hover,
+    :focus {
+      border: $mainTextColor;
+      background-color: $mainTextColor;
+      color: $mainBgColor;
+      transition: $hoverAnimation;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      bottom: 0%;
+    }
+  }
+  // div {
+  //   display: flex;
+  //   align-items: center;
+  //   gap: 12px;
+  //   padding: 30px 50px;
+  // }
+}
+
+.heroBtnWrp {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 23px;
+    margin-bottom: 94px;
+  }
+  button {
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border: 1px solid #f2f2f2;
+    background: #f9f9f9;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      border-color: $accentColor;
+      transition: $hoverAnimation;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      padding-top: 19px;
+      padding-right: 20px;
+      padding-bottom: 19px;
+      padding-left: 20px;
+    }
+  }
+}
+
+.heroNumbers {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 26px;
+  }
+  :nth-child(2) {
+    font-style: italic;
+  }
+  span {
+    @include font-size(18, 18, 300);
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font-size(24, 24, 300);
+    }
+    color: $secondaryTextColor;
+  }
+}

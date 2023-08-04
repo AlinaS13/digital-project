@@ -1,0 +1,110 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.aboutContainer {
+  @include container;
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 150px;
+  }
+}
+
+.aboutContant {
+  position: relative;
+  background-color: $secondaryBgColor;
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $breakpoint-desktop-small) {
+    flex-wrap: nowrap;
+  }
+  h2 {
+    color: $secondaryTextColor;
+    @include font-size(34, 34, 300);
+    margin-bottom: 10px;
+    padding-top: 15px;
+    padding-left: 16px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font-size(64, 64, 300);
+      margin-bottom: 20px;
+      padding-top: 30px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+  p {
+    @include font-size(12, 18, 300);
+    margin-bottom: 20px;
+    color: #000;
+    padding-left: 16px;
+    padding-right: 16px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      @include font-size(16, 25, 300);
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+  }
+}
+.aboutImgWrp {
+  position: relative;
+  img {
+    width: 50%;
+    margin-bottom: 200px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-bottom: 0;
+      width: 400%;
+    }
+    &:nth-child(2) {
+      margin-bottom: 0;
+      position: absolute;
+      top: 93%;
+      left: 25%;
+      // width: 216px;
+      // height: 109px;
+    }
+    @media screen and (min-width: $breakpoint-tablet) {
+      &:first-of-type {
+        margin-bottom: 30px;
+        padding-top: 30px;
+        padding-left: 50px;
+        width: 270px;
+        height: 265px;
+        @media screen and (min-width: $breakpoint-desktop-small) {
+          padding-left: 100px;
+        }
+      }
+      &:nth-child(2) {
+        position: absolute;
+        left: 27%;
+        top: 72%;
+        width: 270px;
+        height: 140px;
+        z-index: 10;
+      }
+    }
+  }
+}
+.aboutCenterImg {
+  width: 40%;
+  position: absolute;
+  top: 33%;
+  left: 60%;
+  @media screen and (min-width: $breakpoint-tablet) {
+    position: static;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+}

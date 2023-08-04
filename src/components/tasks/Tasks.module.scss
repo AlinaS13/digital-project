@@ -1,0 +1,61 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.tasksContainer {
+  @include container;
+  margin-bottom: 30px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-bottom: 120px;
+  }
+  h2 {
+    color: $secondaryTextColor;
+    @include font-size(34, 34, 300);
+    margin-bottom: 10px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font-size(64, 64, 300);
+      margin-bottom: 60px;
+    }
+  }
+}
+.tasksContantWrp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    flex-direction: row;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 187px;
+  }
+  p {
+    color: $mainTextColor;
+    @include font-size(12, 18, 300);
+    @media screen and (min-width: $breakpoint-tablet) {
+      @include font-size(18, 22, 400);
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      @include font-size(22, 36, 400);
+    }
+  }
+  img {
+    width: 47px;
+    height: 81px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      width: 104px;
+      height: 140px;
+    }
+  }
+  //   span {
+  //     @include font-size(200, 200, 900);
+  //     font-family: SF Pro Display;
+  //     color: #f2f2f2;
+  //   }
+}
+
+.flexWrp {
+  display: flex;
+  gap: 30px;
+}

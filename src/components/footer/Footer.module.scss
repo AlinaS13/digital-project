@@ -1,0 +1,229 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.footerContainer {
+  @include container;
+  background-color: #2c2c2c;
+}
+.footerContentContainer {
+  padding-top: 38px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  //   flex-direction: column;
+  @media screen and (min-width: $breakpoint-tablet) {
+    align-items: start;
+    padding-top: 58px;
+    padding-bottom: 60px;
+    // flex-direction: row;
+    justify-content: center;
+    gap: 0;
+    flex-wrap: nowrap;
+  }
+
+  nav {
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-right: 30px;
+    }
+    @media screen and (min-width: $breakpoint-desktop) {
+      margin-right: 100px;
+    }
+  }
+  h2 {
+    @include font-size(14, 14, 700);
+    color: $mainBgColor;
+
+    margin-bottom: 10px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      @include font-size(16, 16, 700);
+      margin-bottom: 25px;
+    }
+  }
+}
+.logoFooter {
+  width: 76px;
+  height: 48px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 30px;
+    width: 94px;
+    height: 44px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 100px;
+    width: 145px;
+    height: 94px;
+  }
+}
+
+.footerNavigation {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  span {
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+  a {
+    @include font-size(8, 8, 400);
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: $mainBgColor;
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      transition: $hoverAnimation;
+    }
+    &:active {
+      border-top: 1px solid $mainTextColor;
+      border-bottom: 1px solid $mainTextColor;
+    }
+    @media screen and (min-width: $breakpoint-tablet) {
+      @include font-size(12, 12, 400);
+    }
+  }
+}
+.socialBox {
+  // display: none;
+
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    @media screen and (min-width: $breakpoint-desktop) {
+      width: 163px;
+      gap: 40px;
+    }
+  }
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    gap: 40px;
+  }
+}
+
+.facebookIcon {
+  fill: #fff;
+  width: 22px;
+  height: 19px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(60deg);
+  }
+}
+
+.twitterIcon {
+  fill: $mainBgColor;
+  width: 22px;
+  height: 17px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(60deg);
+  }
+}
+.linkedinIcon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(60deg);
+  }
+}
+
+.pinterestIcon {
+  width: 14px;
+  height: 19px;
+  transition: transform 0.5s ease-in-out;
+  &:hover {
+    transition: transform 0.5s ease-in-out;
+    transform: rotate(60deg);
+  }
+}
+.footerAddress {
+  display: flex;
+  font-family: TT Hoves;
+  color: $mainBgColor;
+  font-style: normal;
+  @include font-size(10, 20, 400);
+  letter-spacing: 0.32px;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+    transition: $hoverAnimation;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include font-size(14, 24, 500);
+    letter-spacing: 0.42px;
+  }
+}
+.footerContacts {
+  display: flex;
+  font-family: TT Hoves;
+  color: $mainBgColor;
+  font-style: normal;
+  @include font-size(10, 20, 400);
+  letter-spacing: 0.32px;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+    transition: $hoverAnimation;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include font-size(14, 24, 500);
+    letter-spacing: 0.42px;
+  }
+}
+.footerContactIcon {
+  margin-right: 8px;
+  &:hover,
+  &:focus {
+    fill: $accentColor;
+    color: $accentColor;
+    transition: $hoverAnimation;
+  }
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 14px;
+  }
+}
+.contactTitle {
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-right: 210px;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    margin-right: 341px;
+  }
+}
+.footerAddressItem {
+  //   width: 257px;
+  margin-bottom: 20px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 87px;
+  }
+}
+.footerContactItem {
+  margin-bottom: 10px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-bottom: 33px;
+  }
+}
+.footerNavigationItem {
+  &:nth-child(-n + 4) {
+    margin-bottom: 8px;
+    @media screen and (min-width: $breakpoint-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+}

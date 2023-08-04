@@ -1,0 +1,37 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+.mainButton {
+  width: 100px;
+  height: 40px;
+  background-color: $mainBgColor;
+  border: $mainBgColor;
+  color: $mainTextColor;
+  @include font-size(8, 8, 400);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+    border: $mainTextColor;
+    background-color: $mainTextColor;
+    color: $mainBgColor;
+    transition: $hoverAnimation;
+  }
+  @media screen and (min-width: $breakpoint-desktop) {
+    @include font-size(12, 12, 400);
+    letter-spacing: 2.4px;
+    width: 222px;
+    height: 71px;
+  }
+}
+
+.buttonContentWrp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0 14px;
+  @media screen and (min-width: $breakpoint-desktop) {
+    gap: 12px;
+    // padding: 35px 55px;
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../scss/mixins";
+@import "../../scss/variables";
+
+.copyrightContainer {
+  @include container;
+  background-color: #2c2c2c;
+  border-top: 1px solid gray;
+}
+
+.copyright {
+  text-align: center;
+  color: rgba(200, 200, 200, 0.5);
+  font-family: Open Sans;
+  @include font-size(8, 18, 400);
+  @media screen and (min-width: $breakpoint-tablet) {
+    @include font-size(12, 22, 400);
+  }
+}
+
+.copyrightWrp {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
