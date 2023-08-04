@@ -1,8 +1,57 @@
-# React + Vite
+# Digital Project Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Digital Project Site is a basic simple prototype of a bilding community website.
 
-Currently, two official plugins are available:
+## Markup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+https://www.figma.com/file/5vTTdJqDacemvzcNYSWsQt/TEST?node-id=0%3A20
+
+## Features
+
+- Responsive markup
+- Dropdown menu
+- Navigation with smooth scroll to anchor
+- Animation
+- Added SVG components
+
+## Tech Stack
+
+- React + Vite
+- JS
+- SCSS
+- HTML
+- Extra libraries
+
+## Related link
+
+[LINK TO LIVE PAGE](https://alinas13.github.io/digital-project/)
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/AlinaS13/digital-project.git
+```
+
+Go to the project directory
+
+```bash
+  cd  /name of your local folder/
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+## Authors
+
+The site was designed and developed by Alina Shestopalopva.

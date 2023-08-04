@@ -14,7 +14,7 @@ export const Footer = () => {
   return (
     <footer className={style.footerContainer}>
       <div className={style.footerContentContainer}>
-        <a href="digital-project/">
+        <a href="#">
           <img className={style.logoFooter} src={logoFooter} alt="logo" />
         </a>
         <nav>
